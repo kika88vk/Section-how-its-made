@@ -6,7 +6,6 @@
 
     color: #242424;
     background-color: rgba(255, 255, 255, 0.87);
-
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -17,8 +16,10 @@
     --secondary-text-color: #FD9222;
     --accent-color: #1E1823;
     --secondary-accent-color: #FD9222;
+    --secondary-color-btn: #FCF1E0;
     --primary-white-color: #ffffff;
-    --bg-primary-color: #E2E2E2;
+    --bg-primary-color: #FAFAFA;
+    --backdrop: rgba(46, 47, 66, 0.4);
     --bg-grad-footer: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     --bg-grad-hero: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%);
     /* ANIMATIONS */
@@ -26,23 +27,6 @@
     --function-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 376px) {
-    .container {
-        width: 346px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        width: 738px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 1160px;
-    }
-}
 
 /* Reset styles */
 h1,
@@ -109,6 +93,92 @@ html {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* --------------------How its made----------------------- */
+
+.how-its-made {
+    border-color: var(--bg-primary-color);
+    margin-top: 72px;
+    margin-bottom: 72px;
+}
+
+.container {}
+
+.how-its-made-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    margin-bottom: 32px;
+}
+
+.title-accent {
+    color: var(--secondary-accent-color);
+}
+
+.how-its-made-video {
+    max-width: 335px;
+    height: 500px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.how-its-made-list-wrap {
+    background-color: var(--secondary-accent-color);
+    border-radius: 15px;
+    padding: 20px 14px;
+    width: 335px;
+    height: 456px;
+}
+
+.how-its-made-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--primary-text-color);
+    margin-bottom: 20px;
+}
+
+.cook-choc-list {
+    list-style: disc;
+    padding-left: 15px;
+}
+
+.cook-choc-item {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: var(--primary-text-color);
+
+}
+
+.cook-choc-item:not(:last-child) {
+margin-bottom: 18px;
+}
+
+@media screen and (min-width: 376px) {
+    .container {
+        width: 346px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 738px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1160px;
+    }
 }
 
 /* MOBILE-MENU-0-767px */
