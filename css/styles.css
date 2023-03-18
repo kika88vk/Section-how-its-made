@@ -106,8 +106,11 @@ html {
 }
 
 .h-i-m-container {
+    max-width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .how-its-made-title {
@@ -229,6 +232,9 @@ margin-bottom: 18px;
         width: 1200px;
     }
 
+    .how-its-made {  
+        margin-bottom: 129px;
+    }
     .how-its-made-list-wrap {
         padding-top: 32px;
         padding-left: 32px;
@@ -245,6 +251,7 @@ margin-bottom: 18px;
         gap: 20px;
         margin-left: auto;
         margin-bottom: auto;
+        height: 400px;
     }
     .video-container {
         position: relative;
